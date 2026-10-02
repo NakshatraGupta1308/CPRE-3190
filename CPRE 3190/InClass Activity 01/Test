@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body bgcolor = "lightblue">
+
+            <h1><marquee>In-Class Activity 1</marquee></h1>
+
+            <h2>Name: Nakshatra Gupta</h2>
+        
+            <h3>ISU Email: ng1308@iastate.edu</h3>
+        
+            <h4>Date: 08/27/2026</h4>
+
+            <p style = "color: blue;">In Class Activity 1 Submission</p>
+        
+            <p>These are two Puppy friends: </p>
+
+            <ol type="a">
+                <li style="color: green;">Both of them are cute</li>
+                <li style="color: green;">One is named oreo</li>
+                <li style="color: green;">The other is named max</li>
+            </ol>
+           <img src="./puppies.jpg " alt="puppies" width="500" height="300">
+           
+        </body>
+        </html>

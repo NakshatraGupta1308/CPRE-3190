@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <style>
+            .container {
+                max-width: 960px;
+                margin: 0 auto;
+                padding: 40px;
+            }
+            .project {
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                padding: 20px;
+            }
+            .video-embed {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                margin-bottom: 15px;
+            }
+            .video-embed iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 0;
+            }
+            .project video {
+                max-width: 100%;
+                display: block;
+                margin-bottom: 15px;
+            }
+        </style>
+        <title>Nakshatra Gupta - Portfolio</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="about">
+            <div class="container">
+                <img src="./images/profile.jpg" alt="Profile Photo">
+                <h1>Nakshatra Gupta</h1>
+                <p>Computer Engineer and Web Developer</p>
+                <p style="font-family: 'Courier New', Courier, monospace; color: brown">Welcome to SE/COMS 3190!</p>
+                <p>I'm Nakshatra Gupta, a Computer Engineering student at Iowa State University who transferred from Nirma University in Ahmedabad, India. My academic journey has taken me across continents and two universities, building a foundation in both the theoretical depth of computer science and the hands-on rigor of engineering.</p>
+                <p>I'm most energized when I get to work close to the hardware, programming microcontrollers, designing sensor-driven systems, and watching logic translate into physical behavior. At the same time, I have a strong pull toward the visual side of computing: UI/UX design, digital art, and game design concepts.</p>
+                <p>Outside of coursework, I've volunteered at Comic Con India and concert events, competed in hackathons, and contributed to NASA's SpaceApps challenge. I believe good engineering is both technically sound and human-centered.</p>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project">
+                    <div class="video-embed">
+                        <iframe src="https://www.youtube.com/embed/qTwxhTLsqMM" title="Calmify App Demonstration" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <h3>Project 1: Calmify - Mental Health Mobile App</h3>
+                    <p><em>Jan 2026 &ndash; May 2026 &middot; Associated with Iowa State University - College of Engineering</em></p>
+                    <p>Calmify is a full-stack mental health platform that connects users with
+                    counsellors through a native Android application. Built collaboratively as a
+                    4-person team for COMS 3090 at Iowa State University.</p>
+                    <p><strong>Key features:</strong></p>
+                    <ul>
+                        <li>Real-time messaging between users and counsellors using WebSockets, with typing indicators, read receipts, and file uploads</li>
+                        <li>Appointment booking and management workflow with accept/decline flows</li>
+                        <li>AI-powered chat assistant for immediate support outside counsellor hours</li>
+                        <li>Habit tracking, daily mood check-ins, and worry note journaling</li>
+                        <li>Counsellor dashboard with live stats, status management, and prescription assignment</li>
+                        <li>Admin panel for user account management</li>
+                        <li>Three distinct user roles (User, Counsellor, Admin) with role-based UI and permissions</li>
+                    </ul>
+                    <p><strong>My contributions as the frontend Android developer:</strong></p>
+                    <ul>
+                        <li>Built the login and sign-up flow with role-based routing and persistent session handling</li>
+                        <li>Designed and implemented the counsellor search and appointment booking experience</li>
+                        <li>Developed the real-time chat interface with WebSocket integration, typing indicators, read receipts, and file upload support</li>
+                        <li>Implemented the AI Assistant chat for instant in-app support</li>
+                        <li>Built the admin dashboard for managing users, counsellors, and account permissions</li>
+                        <li>Designed the entire UI system across 30+ activities including the home dashboards, drawers, and Material Design components</li>
+                        <li>Implemented profile picture handling using Glide with caching and rounded transformations</li>
+                        <li>Set up GitLab CI/CD pipeline with automated Android builds</li>
+                    </ul>
+                    <p><strong>Tech stack:</strong> Java, Android SDK, Spring Boot, MySQL, WebSockets, Volley, Glide, Material Design Components, GitLab CI/CD</p>
+                    <p><strong>Skills:</strong> Android Development, Java, and +7 skills</p>
+                </div>
+                <div class="project">
+                    <img src="./images/cybot-robot.jpg" alt="CyBot autonomous navigation robot on the test course">
+                    <h3>Project 2: CyBot Shopping Robot &ndash; Navigation &amp; Sensing</h3>
+                    <p><em>Nov 2025 &ndash; Dec 2025 &middot; Iowa State University</em></p>
+                    <p><strong>What is the project?</strong><br>
+                    The CyBot Shopping Robot is an autonomous navigating robot built on the Tiva
+                    TM4C123 microcontroller platform as part of my Embedded Systems coursework at
+                    Iowa State University. The robot was designed to navigate a simulated store
+                    environment, finding aisles, detecting objects on shelves, and reporting its
+                    findings in real time.</p>
+                    <p><strong>What was the goal?</strong><br>
+                    The goal was to program a physical robot to move intelligently through a
+                    structured space without human guidance. Using infrared (IR) sensors to
+                    detect nearby objects and an ultrasonic sensor to measure distance more
+                    precisely, CyBot needed to autonomously identify which aisle it was in, scan
+                    for items on shelves, and log everything it found, all while navigating
+                    around obstacles. Think of it as a very early prototype of the kind of
+                    technology a warehouse or retail company might use to take inventory without
+                    sending a human down every aisle.</p>
+                    <p><strong>What was my contribution and what did I learn?</strong><br>
+                    I was responsible for writing the core navigation and sensing logic in C,
+                    running directly on the microcontroller's hardware with no operating system
+                    underneath. I implemented servo motor control to steer the robot, configured
+                    UART communication so the robot could send real-time data logs back to a
+                    connected computer, and built the aisle-search object identification
+                    algorithm that let CyBot "decide" what it was seeing based on sensor
+                    readings. This project pushed me to think at the hardware level,
+                    understanding how GPIO pins, timers, and PWM signals translate into physical
+                    movement, while also writing clean, modular code to keep the logic
+                    organized.</p>
+                    <p><strong>Why does this matter beyond the classroom?</strong><br>
+                    Autonomous navigation is at the heart of some of today's most exciting
+                    technologies: self-driving cars, warehouse robots at Amazon fulfillment
+                    centers, drones performing agricultural surveys, and hospital robots
+                    delivering supplies. The skills behind CyBot, reading sensor data, making
+                    real-time decisions, and communicating results, are the same skills that make
+                    those systems work. As labor costs rise and supply chains become more
+                    complex, robots that can navigate and sense their environment without
+                    constant human supervision will play an enormous role in how goods are
+                    stored, moved, and sold. This project gave me a concrete, working foundation
+                    in exactly that domain.</p>
+                    <p><strong>Skills:</strong> C, Embedded, Robotics</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>Reach me out at nixngaps@gmail.com!</p>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2026 Nakshatra Gupta</p>
+        </footer>
+    </body>
+</html>
