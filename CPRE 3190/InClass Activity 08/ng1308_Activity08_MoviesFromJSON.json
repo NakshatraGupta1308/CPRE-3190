@@ -16,7 +16,7 @@
           "movieId": "76788",
           "title": "The Iron Giant",
           "year": 1999,
-          "url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/The_Iron_Giant_poster.JPG/220px-The_Iron_Giant_poster.JPG"
+          "url": "https://upload.wikimedia.org/wikipedia/en/d/d3/The_Iron_Giant_poster.JPG"
       },
       {
         "movieId": "BB124",
@@ -28,13 +28,13 @@
         "movieId": "SM002",
         "title": "Spider-Man",
         "year": 2002,
-        "url": "https://placehold.co/200x300?text=Spider-Man"
+        "url": "https://upload.wikimedia.org/wikipedia/en/6/6c/Spider-Man_%282002_film%29_poster.jpg"
     },
     {
         "movieId": "FZ013",
         "title": "Frozen",
         "year": 2013,
-        "url": "https://placehold.co/200x300?text=Frozen"
+        "url": "https://upload.wikimedia.org/wikipedia/en/6/6d/Olaf_from_Disney%27s_Frozen.png"
     }
   ]
 }
