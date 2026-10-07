@@ -23,6 +23,18 @@
         "title": "Mulan",
         "year": 1998,
         "url": "https://freepngimg.com/thumb/disney/113364-picture-mulan-disney-free-photo.png"
+    },
+    {
+        "movieId": "SM002",
+        "title": "Spider-Man",
+        "year": 2002,
+        "url": "https://placehold.co/200x300?text=Spider-Man"
+    },
+    {
+        "movieId": "FZ013",
+        "title": "Frozen",
+        "year": 2013,
+        "url": "https://placehold.co/200x300?text=Frozen"
     }
   ]
 }
