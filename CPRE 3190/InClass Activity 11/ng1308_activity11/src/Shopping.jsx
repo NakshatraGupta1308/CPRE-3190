@@ -4,7 +4,6 @@
   Date  : November 3, 2026
   Activity 11 - Part 1: Shopping Cart with React Hooks
 */
-// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from "react";
 import items from "./data/fashion.json";
 
@@ -51,9 +50,7 @@ const Shop = () => {
   ));
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/immutability
     total();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cart]);
 
   const total = () => {
