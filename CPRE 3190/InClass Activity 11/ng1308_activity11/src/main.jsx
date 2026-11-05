@@ -1,0 +1,17 @@
+/*
+  Author: Nakshatra Gupta
+  Email : ng1308@iastate.edu
+  Date  : November 3, 2026
+*/
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "bootstrap/dist/css/bootstrap.css";
+import "./index.css";
+import Shops from "./ShoppingBootstrap.jsx";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <Shops />
+  </React.StrictMode>
+);
