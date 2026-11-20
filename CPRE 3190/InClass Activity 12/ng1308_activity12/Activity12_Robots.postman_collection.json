@@ -1,0 +1,47 @@
+{
+  "info": {
+    "name": "Activity 12 - Robots API (ng1308)",
+    "description": "GET, POST, PUT, DELETE requests for the Activity 12 Express + MongoDB backend on http://localhost:8080",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1. GET all robots",
+      "request": { "method": "GET", "url": "http://localhost:8080/listRobots" }
+    },
+    {
+      "name": "2. GET one robot (id 2)",
+      "request": { "method": "GET", "url": "http://localhost:8080/2" }
+    },
+    {
+      "name": "3. POST add robot (id 4)",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost:8080/addRobots",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": 4,\n  \"name\": \"Robot Nakshatra\",\n  \"price\": 100.90,\n  \"description\": \"My robot for Activity 12\",\n  \"imageUrl\": \"https://robohash.org/Nakshatra\"\n}",
+          "options": { "raw": { "language": "json" } }
+        }
+      }
+    },
+    {
+      "name": "4. PUT update price (id 2)",
+      "request": {
+        "method": "PUT",
+        "url": "http://localhost:8080/updateRobot/2",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"price\": 48.90\n}",
+          "options": { "raw": { "language": "json" } }
+        }
+      }
+    },
+    {
+      "name": "5. DELETE robot (id 4)",
+      "request": { "method": "DELETE", "url": "http://localhost:8080/deleteRobot/4" }
+    }
+  ]
+}
